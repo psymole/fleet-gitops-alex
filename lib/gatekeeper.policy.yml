@@ -6,3 +6,4 @@
   critical: true
   run_script:
     path: ../lib/enable-gatekeeper.sh
+
