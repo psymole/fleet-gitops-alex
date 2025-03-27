@@ -5,6 +5,11 @@
 # To add another team, create a new file in the teams/ directory and copy and paste the contents from this file.
 
 name: Engineering
+policies:
+  - path: ../lib/macos-device-health.policies.yml
+  - path: ../lib/windows-device-health.policies.yml
+  - path: ../lib/gatekeeper.policy.yml
+  - path: ../lib/all-windows-updates-installed.policies.yml
 queries:
   - path: ../lib/collect-usb-devices.queries.yml
 agent_options:
@@ -14,13 +19,9 @@ controls:
     custom_settings:
       - path: ../lib/passcode-settings-ddm.json
   scripts:
+    - path: ../lib/enable-gatekeeper.sh
     - path: ../lib/remove-zoom-artifacts.script.sh
     - path: ../lib/set-timezone.script.sh
-policies:
-  - path: ../lib/macos-device-health.policies.yml
-  - path: ../lib/windows-device-health.policies.yml
-  - path: ../lib/gatekeeper.policy.yml
-  - path: ../lib/all-windows-updates-installed.policies.yml
 team_settings:
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
