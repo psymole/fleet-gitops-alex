@@ -18,7 +18,11 @@ org_settings:
     transparency_url: https://catoftheday.com
   server_settings:
     server_url: $FLEET_URL
+  webhook_settings:
+    activities_webhook:
+      enable_activities_webhook: true
+      destination_url: https://examples.org/webhook_handler
   org_info:
-    org_name: Fleet
+    org_name: Ntntx-Fleet
   secrets:
     - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
