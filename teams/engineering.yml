@@ -8,6 +8,7 @@ name: Engineering
 policies:
   - path: ../lib/macos-device-health.policies.yml
   - path: ../lib/windows-device-health.policies.yml
+  - path: ../lib/gatekeeper.policy.yml
 queries:
   - path: ../lib/collect-usb-devices.queries.yml
 agent_options:
