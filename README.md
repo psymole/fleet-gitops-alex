@@ -1,5 +1,6 @@
 # Fleet GitOps
 
+TEST
 This is the starter repository for using [Fleet](https://fleetdm.com) with a GitOps workflow.
 
 [Why use GitOps?](https://fleetdm.com/guides/sysadmin-diaries-gitops-a-strategic-advantage#basic-article)
