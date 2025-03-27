@@ -30,4 +30,4 @@ team_settings:
     - secret: "$FLEET_NEW_HIRES_ENROLL_SECRET"
 software:
   packages:
-    -path: ../lib/zoom.yml
+    - path: ../lib/zoom.yml
